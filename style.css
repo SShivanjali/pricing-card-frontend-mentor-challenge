@@ -1,0 +1,125 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Karla';
+  font-size: 16px;
+  html-weight: 400; /*This is just set by default. no need*/
+}
+
+body{
+  padding: 20px;
+}
+
+h2, h4, p{
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#card{
+  width: 600px;
+  height: 400px;
+  box-shadow: box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.32);
+-webkit-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.32);
+  border-radius: 5px; 
+  overflow: hidden; 
+/*   all brders go rounded. we tell css to fit everything that goes breaking out of the maiin container(perfect sq corners), just hide it. */
+}
+
+#top-section{
+  width: width: 100%;
+  height: 45%;
+  padding: 25px; /* space around the text. */
+}
+
+#bottom-section{
+  width: 100%;
+  height: 55%;
+  color: white;
+}
+#bottom-left-section {
+  display: inline-block;
+  width:  50%;
+  height: 100%;
+  vertical-align: top;
+  background-color: #2ab2af;
+  padding: 25px;
+}
+
+#bottom-right-section {
+  display: inline-block;
+  width:  50%;
+  height: 100%;
+  vertical-align: top;
+  background-color: #7ac2c0;
+  padding: 25px;
+}
+
+#top-section h2{
+  color: #2ab2af;
+  margin-bottom: 20px;
+}
+
+#top-section h4{
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+
+#top-section p{
+  color: #98a6bd;
+}
+
+button{
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px; 
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #8AF52C;
+  transform: scale(1.02);
+}
+
+#price{
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#bottom-left-section h4 {
+  margin-bottom: 25px;
+}
+
+#bottom-left-section p{
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+#price-frequency, #price{
+  display: inline-block;
+  }
+
+#price-frequency{
+  position: relative;
+  top: -3px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 5px;
+}
+
+/* #price-container{
+  
+}
+ */
+
+ul{
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem; /* 80% of root size(16px)*/
+  opacity: 0.8;
+}
